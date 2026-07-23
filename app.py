@@ -63,7 +63,7 @@ df_all.info()
 df_all['order_date'] = pd.to_datetime(df_all['order_date'], errors='coerce')
 df_all['registration_date'] = pd.to_datetime(df_all['registration_date'], errors='coerce')
 
-# Напишем функцию проверки пустых значений:
+# Проверим пустые значения и дубликаты:
 
 
 if df_all.isnull().sum().sum() != 0: 
